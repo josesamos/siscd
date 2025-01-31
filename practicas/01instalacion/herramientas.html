@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Herramientas | Instalación del Entorno de Prácticas</title>
+  <meta name="description" content="<p>SISCD
+Dpto. de Lenguajes y Sistemas Informáticos
+Universidad de Granada</p>" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Herramientas | Instalación del Entorno de Prácticas" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>SISCD
+Dpto. de Lenguajes y Sistemas Informáticos
+Universidad de Granada</p>" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Herramientas | Instalación del Entorno de Prácticas" />
+  
+  <meta name="twitter:description" content="<p>SISCD
+Dpto. de Lenguajes y Sistemas Informáticos
+Universidad de Granada</p>" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://josesamos.github.io/smd/">SMD</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivo</a></li>
+<li class="chapter" data-level="" data-path="herramientas.html"><a href="herramientas.html"><i class="fa fa-check"></i>Herramientas</a>
+<ul>
+<li class="chapter" data-level="" data-path="herramientas.html"><a href="herramientas.html#metabase"><i class="fa fa-check"></i><em>Metabase</em></a></li>
+<li class="chapter" data-level="" data-path="herramientas.html"><a href="herramientas.html#power-bi-y-power-query"><i class="fa fa-check"></i><em>Power BI</em> y <em>Power Query</em></a></li>
+<li class="chapter" data-level="" data-path="herramientas.html"><a href="herramientas.html#knime"><i class="fa fa-check"></i><em>KNIME</em></a></li>
+<li class="chapter" data-level="" data-path="herramientas.html"><a href="herramientas.html#git"><i class="fa fa-check"></i><em>Git</em></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instalación del Entorno de Prácticas</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="herramientas" class="section level1 unnumbered hasAnchor">
+<h1>Herramientas<a href="herramientas.html#herramientas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="metabase" class="section level2 unnumbered hasAnchor">
+<h2><em>Metabase</em><a href="herramientas.html#metabase" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong><em>Metabase</em></strong> es una herramienta de business intelligence (BI) de código abierto diseñada para facilitar la consulta, visualización y análisis de datos. Está enfocada en usuarios no técnicos, aunque también ofrece opciones avanzadas para quienes usen SQL directamente.</p>
+<ul>
+<li><p><strong>Web</strong>: <a href="https://www.metabase.com/">metabase.com</a></p></li>
+<li><p>Necesita Java, al menos la versión 11.</p>
+<ul>
+<li>Se puede descargar de: <a href="https://adoptium.net/es/temurin/archive/?version=11" class="uri">https://adoptium.net/es/temurin/archive/?version=11</a></li>
+<li>En la instalación, seleccionar para que se instalen todas las opciones.</li>
+</ul></li>
+<li><p>Instalación:</p>
+<ol style="list-style-type: decimal">
+<li><p>Descargar: <a href="https://www.metabase.com/start/oss/jar" class="uri">https://www.metabase.com/start/oss/jar</a></p></li>
+<li><p>Copiarlo en una carpeta (p.e., <code>C:/metabase</code>).</p></li>
+</ol></li>
+<li><p>Comprobar que funciona:</p>
+<ol style="list-style-type: decimal">
+<li><p>Ejecutar en un terminal (<em>Símbolo del sistema</em>), en la carpeta de instalación: <code>java -jar metabase.jar</code></p></li>
+<li><p>Acceder desde el navegador: <a href="http://localhost:3000/" class="uri">http://localhost:3000/</a></p></li>
+</ol></li>
+<li><p>Opcional, para facilitar el acceso en Windows:</p>
+<ol style="list-style-type: decimal">
+<li><p>Crear un archivo <code>.bat</code> (p.e, <code>metabase.bat</code>) en la carpeta de instalación, con el contenido siguiente (suponiendo que se ha instalado en la carpeta <code>C:/metabase</code>):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="herramientas.html#cb1-1" tabindex="-1"></a><span class="ex">@echo</span> off</span>
+<span id="cb1-2"><a href="herramientas.html#cb1-2" tabindex="-1"></a><span class="bu">cd</span> /d C:<span class="dt">\m</span>etabase</span>
+<span id="cb1-3"><a href="herramientas.html#cb1-3" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> metabase.jar</span></code></pre></div></li>
+<li><p>Crear un <em>acceso directo</em> en el escritorio al archivo <code>.bat</code>.</p></li>
+</ol></li>
+</ul>
+</div>
+<div id="power-bi-y-power-query" class="section level2 unnumbered hasAnchor">
+<h2><em>Power BI</em> y <em>Power Query</em><a href="herramientas.html#power-bi-y-power-query" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong><em>Power BI</em></strong> es una herramienta de análisis de datos y visualización desarrollada por Microsoft que permite a los usuarios conectar, transformar y visualizar datos de manera interactiva.</p>
+<ul>
+<li><strong>Web</strong>: <a href="https://powerbi.microsoft.com">powerbi.microsoft.com</a></li>
+</ul>
+<p><strong><em>Power Query</em></strong>, integrado en <em>Power BI</em>, es una herramienta que permite a los usuarios extraer, transformar y cargar datos desde una variedad de fuentes, simplificando la preparación de los datos para análisis.</p>
+<ul>
+<li><strong>Web</strong>: <a href="https://powerquery.microsoft.com">powerquery.microsoft.com</a></li>
+</ul>
+<p>Si no se dispone de Windows, se puede usar una máquina virtual:</p>
+<ul>
+<li><em>VirtualBox</em> es una herramienta de virtualización que te permite ejecutar otros sistemas operativos en tu máquina.
+<ul>
+<li>Descarga: <a href="https://www.virtualbox.org/wiki/Downloads" class="uri">https://www.virtualbox.org/wiki/Downloads</a></li>
+<li>Cómo descargar Windows: <a href="https://youtu.be/ZvOqn3foWhE" class="uri">https://youtu.be/ZvOqn3foWhE</a></li>
+<li>Cómo instalar Windows en <em>VirtualBox</em>: <a href="https://youtu.be/YF2AIoJ3zU8" class="uri">https://youtu.be/YF2AIoJ3zU8</a></li>
+</ul></li>
+</ul>
+<p>Descarga de <em>Power BI</em> (contiene a <em>Power Query</em>):</p>
+<ul>
+<li>Está disponible en <a href="https://www.microsoft.com/es-es/download/details.aspx?id=58494">https://www.microsoft.com/es-es/download/details.aspx?id=58494</a>.</li>
+</ul>
+</div>
+<div id="knime" class="section level2 unnumbered hasAnchor">
+<h2><em>KNIME</em><a href="herramientas.html#knime" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong><em>KNIME</em></strong> es una plataforma de software libre y de código abierto para el análisis de datos, minería de datos, aprendizaje automático e inteligencia artificial. Permite diseñar flujos de trabajo de forma visual, sin necesidad de programación.</p>
+<ul>
+<li><p><strong>Web</strong>: <a href="https://www.knime.com/">knime.com</a></p></li>
+<li><p>Necesita Java, al menos la versión 11 (ya lo tendremos instalado al instalar <em>Metabase</em>).</p></li>
+<li><p>Descarga desde el sitio web indicado, para descargarlo no es necesario registrase.</p></li>
+</ul>
+</div>
+<div id="git" class="section level2 unnumbered hasAnchor">
+<h2><em>Git</em><a href="herramientas.html#git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong><em>Git</em></strong> es un sistema de control de versiones distribuido que permite gestionar y rastrear cambios en archivos de manera eficiente. Es ampliamente utilizado para colaborar, mantener un historial de versiones y facilitar la integración de cambios en proyectos.</p>
+<ul>
+<li><p><strong>Web</strong>: <a href="https://git-scm.com/">git-scm.com</a></p></li>
+<li><p>Descargar: <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
