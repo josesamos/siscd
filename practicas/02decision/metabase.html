@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Metabase | Herramientas de Soporte a la Decisión</title>
+  <meta name="description" content="<p>SISCD
+Dpto. de Lenguajes y Sistemas Informáticos
+Universidad de Granada</p>" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Metabase | Herramientas de Soporte a la Decisión" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>SISCD
+Dpto. de Lenguajes y Sistemas Informáticos
+Universidad de Granada</p>" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Metabase | Herramientas de Soporte a la Decisión" />
+  
+  <meta name="twitter:description" content="<p>SISCD
+Dpto. de Lenguajes y Sistemas Informáticos
+Universidad de Granada</p>" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://josesamos.github.io/siscd/">SISCD</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Objetivo</a></li>
+<li class="chapter" data-level="1" data-path="metabase.html"><a href="metabase.html"><i class="fa fa-check"></i><b>1</b> Metabase</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="metabase.html"><a href="metabase.html#acceder-a-metabase"><i class="fa fa-check"></i><b>1.1</b> Acceder a Metabase</a></li>
+<li class="chapter" data-level="1.2" data-path="metabase.html"><a href="metabase.html#obtención-de-los-datos"><i class="fa fa-check"></i><b>1.2</b> Obtención de los datos</a></li>
+<li class="chapter" data-level="1.3" data-path="metabase.html"><a href="metabase.html#bases-de-datos"><i class="fa fa-check"></i><b>1.3</b> Bases de datos</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="metabase.html"><a href="metabase.html#base-de-datos-oltp"><i class="fa fa-check"></i><b>1.3.1</b> Base de datos OLTP</a></li>
+<li class="chapter" data-level="1.3.2" data-path="metabase.html"><a href="metabase.html#base-de-datos-olap"><i class="fa fa-check"></i><b>1.3.2</b> Base de datos OLAP</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicios"><i class="fa fa-check"></i>Ejercicios</a>
+<ul>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicio-informes-y-cuadros-de-mando-metabase"><i class="fa fa-check"></i>Ejercicio: Informes y cuadros de mando Metabase</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Herramientas de Soporte a la Decisión</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="metabase" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Metabase<a href="metabase.html#metabase" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Metabase ofrece muchas posibilidades, nos vamos a centrar en lo imprescindible para entenderlo y desarrollar los ejercicios.</p>
+<div id="acceder-a-metabase" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Acceder a Metabase<a href="metabase.html#acceder-a-metabase" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En primer lugar, iniciamos el servidor, ejecutamos el comando siguiente en la carpeta de instalación:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="metabase.html#cb1-1" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> metabase.jar</span></code></pre></div>
+<p>Accedemos a <a href="http://localhost:3000/" class="uri">http://localhost:3000/</a></p>
+<p>El resto de información necesaria sobre Metabase se encuentra en el vídeo asociado.</p>
+</div>
+<div id="obtención-de-los-datos" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Obtención de los datos<a href="metabase.html#obtención-de-los-datos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Las bases de datos necesarias están disponibles en:</p>
+<ul>
+<li><a href="https://doi.org/10.6084/m9.figshare.26543542.v3"><strong>Bases de datos OLTP y OLAP sobre ventas en una cadena de tiendas</strong></a>.</li>
+</ul>
+<p>Descargaremos los archivos:</p>
+<ul>
+<li><strong>Base de datos OLTP</strong>: Diseñada para operaciones transaccionales (<code>ventas_oltp_sqlite.zip</code>).<br />
+</li>
+<li><strong>Base de datos OLAP</strong>: Optimizada para análisis multidimensional (<code>ventas_olap_sqlite.zip</code>).</li>
+</ul>
+<p>Los descomprimimos y situamos los archivos siguientes en una carpeta de trabajo:</p>
+<ul>
+<li><code>ventas_oltp.sqlite</code></li>
+<li><code>ventas_olap.sqlite</code></li>
+</ul>
+</div>
+<div id="bases-de-datos" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Bases de datos<a href="metabase.html#bases-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>SQLite</em> es un sistema de gestión de bases de datos relacional ligero y autónomo que utiliza un único archivo para almacenar toda la base de datos. Sigue el estándar SQL.</p>
+<p>Los archivos que hemos obtenido son dos bases de datos SQLite, cuyos esquemas se muestran a continuación.</p>
+<div id="base-de-datos-oltp" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Base de datos OLTP<a href="metabase.html#base-de-datos-oltp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ventas-oltp"></span>
+<img src="figuras_original/oltp.png" alt="Base de datos OLTP." width="90%" />
+<p class="caption">
+Figura 1.1: Base de datos OLTP.
+</p>
+</div>
+</div>
+<div id="base-de-datos-olap" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Base de datos OLAP<a href="metabase.html#base-de-datos-olap" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ventas-olap"></span>
+<img src="figuras_original/olap.png" alt="Base de datos OLAP." width="90%" />
+<p class="caption">
+Figura 1.2: Base de datos OLAP.
+</p>
+</div>
+</div>
+</div>
+<div id="ejercicios" class="section level2 unnumbered hasAnchor">
+<h2>Ejercicios<a href="metabase.html#ejercicios" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ejercicio-informes-y-cuadros-de-mando-metabase" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio: Informes y cuadros de mando Metabase<a href="metabase.html#ejercicio-informes-y-cuadros-de-mando-metabase" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Este apartado no puntúa en la actividad.</p>
+<ol start="0" style="list-style-type: decimal">
+<li><strong>Punto de Partida</strong>: <em>Informe Inicial y Operaciones</em> del ejercicio <em>Informes SQL</em>.
+<ul>
+<li>Si ese apartado es correcto, parte los informes definidos en él e <strong>inclúyelos aquí</strong>.</li>
+<li>Si en la corrección de la actividad en PRADO tienes comentarios de ese apartado, tenlos en cuenta, <strong>redefine aquí los informes e indica las modificaciones</strong> que has hecho.</li>
+<li>Si no has desarrollado ese apartado, <strong>desarróllalo aquí e indica que no se ha revisado</strong> previamente.</li>
+</ul></li>
+</ol>
+<p>Todos los apartados siguientes valen igual.</p>
+<p><strong>Todos los elementos que se definan en la actividad</strong> (conexión con la base de datos, modelo, informes, cuadros de mando, etc.) <strong>han de tener como nombre o prefijo tu nombre de usuario de correo electrónico</strong>.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Implementación de los informes</strong>:
+<ul>
+<li>Vamos a trabajar exclusivamente sobre la base de datos <strong>OLAP</strong> en PostgreSQL.</li>
+<li>Implementa los 4 informes incluidos en el apartado <em>Punto de Partida</em> mediante Metabase usando la interfaz gráfica de definición.</li>
+</ul></li>
+<li><strong>Cuadro de mando</strong>:
+<ul>
+<li>Implementa un cuadro de mando que incluya:
+<ul>
+<li>Los 4 informes, cada uno de ellos en formato de tabla dinámica.</li>
+<li>Un campo de filtro que tenga sentido, de acuerdo a la definición de los informes.</li>
+</ul></li>
+</ul></li>
+<li><strong>Cuadro de mando libre</strong>:
+<ul>
+<li>Implementa un cuadro de mando libre con <strong>2 informes</strong> y un campo de filtro:
+<ul>
+<li>Los informes basados exclusivamente en la base de datos OLAP.</li>
+<li>Que incluya representaciones gráficas para los informes.</li>
+</ul></li>
+</ul></li>
+</ol>
+<p><strong>Documentación a entregar:</strong></p>
+<ul>
+<li><p>Genera un documento en formato PDF con la estructura siguiente y el contenido que se indica:</p>
+<ol start="0" style="list-style-type: decimal">
+<li><p>Punto de Partida</p>
+<ol style="list-style-type: decimal">
+<li>Informe Inicial</li>
+<li>Roll-Up</li>
+<li>Drill-Down</li>
+<li>Slice&amp;Dice</li>
+</ol></li>
+<li><p>Implementación de los informes</p>
+<ol style="list-style-type: decimal">
+<li>Informe Inicial</li>
+<li>Roll-Up</li>
+<li>Drill-Down</li>
+<li>Slice&amp;Dice</li>
+</ol></li>
+<li><p>Cuadro de mando</p></li>
+<li><p>Cuadro de mando libre</p></li>
+</ol></li>
+<li><p>Para la implementación de cada informe (también para los del cuadro de mando libre) incluye:</p>
+<ul>
+<li>El título y los niveles de detalle de cada informe.</li>
+<li><strong>Captura de pantalla completa de la aplicación</strong> con la definición del informe.</li>
+<li>Si para la definición de los informes usas un modelo, no es necesario incluir la definición del modelo.</li>
+</ul></li>
+<li><p>Para los cuadros de mando incluye:</p>
+<ul>
+<li>Explicación del campo de filtro incluido y cómo afecta a los informes.</li>
+<li><strong>Captura de pantalla completa de la aplicación</strong> mostrando la definición del filtro.</li>
+<li><strong>Dos capturas de pantalla completa de la aplicación</strong> mostrando cómo funciona el campo de filtro (antes y después de aplicarlo).</li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
