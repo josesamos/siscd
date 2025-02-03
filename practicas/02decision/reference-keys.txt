@@ -1,8 +1,8 @@
 fig:ventas-oltp
 fig:ventas-olap
 metabase
-base-de-datos-oltp
-base-de-datos-olap
 acceder-a-metabase
 obtención-de-los-datos
 bases-de-datos
+base-de-datos-oltp
+base-de-datos-olap
