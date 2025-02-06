@@ -148,16 +148,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="metabase.html"><a href="metabase.html"><i class="fa fa-check"></i><b>1</b> Metabase</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="metabase.html"><a href="metabase.html#acceder-a-metabase"><i class="fa fa-check"></i><b>1.1</b> Acceder a Metabase</a></li>
-<li class="chapter" data-level="1.2" data-path="metabase.html"><a href="metabase.html#obtención-de-los-datos"><i class="fa fa-check"></i><b>1.2</b> Obtención de los datos</a></li>
+<li class="chapter" data-level="1.2" data-path="metabase.html"><a href="metabase.html#obtener"><i class="fa fa-check"></i><b>1.2</b> Obtención de los datos</a></li>
 <li class="chapter" data-level="1.3" data-path="metabase.html"><a href="metabase.html#bases-de-datos"><i class="fa fa-check"></i><b>1.3</b> Bases de datos</a>
 <ul>
 <li class="chapter" data-level="1.3.1" data-path="metabase.html"><a href="metabase.html#base-de-datos-oltp"><i class="fa fa-check"></i><b>1.3.1</b> Base de datos OLTP</a></li>
 <li class="chapter" data-level="1.3.2" data-path="metabase.html"><a href="metabase.html#base-de-datos-olap"><i class="fa fa-check"></i><b>1.3.2</b> Base de datos OLAP</a></li>
 </ul></li>
-<li class="chapter" data-level="1.4" data-path="metabase.html"><a href="metabase.html#informe-de-ejemplo"><i class="fa fa-check"></i><b>1.4</b> Informe de ejemplo</a></li>
-<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicios"><i class="fa fa-check"></i>Ejercicios</a>
+<li class="chapter" data-level="1.4" data-path="metabase.html"><a href="metabase.html#ejemplo"><i class="fa fa-check"></i><b>1.4</b> Informe de ejemplo</a></li>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicios"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#punto-de-partida"><i class="fa fa-check"></i>Punto de Partida</a>
 <ul>
-<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicio-informes-y-cuadros-de-mando-metabase"><i class="fa fa-check"></i>Ejercicio: Informes y cuadros de mando Metabase</a></li>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicio-1-informe-de-ejemplo-en-metabase-incluido-en-el-vídeo"><i class="fa fa-check"></i>Ejercicio 1: Informe de ejemplo en Metabase (incluido en el vídeo)</a></li>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#ejercicio-2-informe-libre"><i class="fa fa-check"></i>Ejercicio 2: Informe libre</a></li>
+<li class="chapter" data-level="" data-path="metabase.html"><a href="metabase.html#documentación-a-entregar"><i class="fa fa-check"></i>Documentación a entregar</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -182,16 +185,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="metabase" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Metabase<a href="metabase.html#metabase" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li><em>Vídeos</em>:
+<ul>
+<li><em>Parte 1: <a href="https://youtu.be/7YSpgQK8atc" class="uri">https://youtu.be/7YSpgQK8atc</a></em></li>
+<li><em>Parte 2: <a href="https://youtu.be/85m4qbebqQM" class="uri">https://youtu.be/85m4qbebqQM</a></em></li>
+</ul></li>
+</ul>
 <p>Metabase ofrece muchas posibilidades, nos vamos a centrar en lo imprescindible para entenderlo y desarrollar los ejercicios.</p>
 <div id="acceder-a-metabase" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Acceder a Metabase<a href="metabase.html#acceder-a-metabase" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>En primer lugar, iniciamos el servidor, ejecutamos el comando siguiente en la carpeta de instalación:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="metabase.html#cb1-1" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> metabase.jar</span></code></pre></div>
 <p>Accedemos a <a href="http://localhost:3000/" class="uri">http://localhost:3000/</a></p>
-<p>El resto de información necesaria sobre Metabase se encuentra en el vídeo asociado.</p>
+<p>El resto de información necesaria sobre Metabase se encuentra en los vídeos asociados.</p>
 </div>
-<div id="obtención-de-los-datos" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Obtención de los datos<a href="metabase.html#obtención-de-los-datos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="obtener" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Obtención de los datos<a href="metabase.html#obtener" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Las bases de datos necesarias están disponibles en:</p>
 <ul>
 <li><a href="https://doi.org/10.6084/m9.figshare.26543542.v3"><strong>Bases de datos OLTP y OLAP sobre ventas en una cadena de tiendas</strong></a>.</li>
@@ -233,8 +243,8 @@ Figura 1.2: Base de datos OLAP.
 </div>
 </div>
 </div>
-<div id="informe-de-ejemplo" class="section level2 hasAnchor" number="1.4">
-<h2><span class="header-section-number">1.4</span> Informe de ejemplo<a href="metabase.html#informe-de-ejemplo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ejemplo" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Informe de ejemplo<a href="metabase.html#ejemplo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>El informe de ejemplo que vamos a desarrollar, tanto en la base de datos OLTP como en la base de datos OLAP, es el siguiente:</p>
 <ul>
 <li><em>Ventas por mes y provincia durante 2024</em>.</li>
@@ -255,70 +265,47 @@ Figura 1.2: Base de datos OLAP.
 </div>
 <div id="ejercicios" class="section level2 unnumbered hasAnchor">
 <h2>Ejercicios<a href="metabase.html#ejercicios" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="ejercicio-informes-y-cuadros-de-mando-metabase" class="section level3 unnumbered hasAnchor">
-<h3>Ejercicio: Informes y cuadros de mando Metabase<a href="metabase.html#ejercicio-informes-y-cuadros-de-mando-metabase" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Este apartado no puntúa en la actividad.</p>
-<ol start="0" style="list-style-type: decimal">
-<li><strong>Punto de Partida</strong>: <em>Informe Inicial y Operaciones</em> del ejercicio <em>Informes SQL</em>.
-<ul>
-<li>Si ese apartado es correcto, parte los informes definidos en él e <strong>inclúyelos aquí</strong>.</li>
-<li>Si en la corrección de la actividad en PRADO tienes comentarios de ese apartado, tenlos en cuenta, <strong>redefine aquí los informes e indica las modificaciones</strong> que has hecho.</li>
-<li>Si no has desarrollado ese apartado, <strong>desarróllalo aquí e indica que no se ha revisado</strong> previamente.</li>
-</ul></li>
-</ol>
-<p>Todos los apartados siguientes valen igual.</p>
 <p><strong>Todos los elementos que se definan en la actividad</strong> (conexión con la base de datos, modelo, informes, cuadros de mando, etc.) <strong>han de tener como nombre o prefijo tu nombre de usuario de correo electrónico</strong>.</p>
-<ol style="list-style-type: decimal">
-<li><strong>Implementación de los informes</strong>:
+<p>Todos los ejercicios siguientes valen igual.</p>
+</div>
+<div id="punto-de-partida" class="section level2 unnumbered hasAnchor">
+<h2>Punto de Partida<a href="metabase.html#punto-de-partida" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Este apartado no puntúa en la actividad.</p>
 <ul>
-<li>Vamos a trabajar exclusivamente sobre la base de datos <strong>OLAP</strong> en PostgreSQL.</li>
-<li>Implementa los 4 informes incluidos en el apartado <em>Punto de Partida</em> mediante Metabase usando la interfaz gráfica de definición.</li>
+<li><p>Obtén las bases de datos OLTP y OLAP (apartado <a href="metabase.html#obtener">1.2</a>), en particular, los archivos:</p>
+<ul>
+<li><code>ventas_oltp.sqlite</code></li>
+<li><code>ventas_olap.sqlite</code></li>
 </ul></li>
-<li><strong>Cuadro de mando</strong>:
+</ul>
+<div id="ejercicio-1-informe-de-ejemplo-en-metabase-incluido-en-el-vídeo" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 1: Informe de ejemplo en Metabase (incluido en el vídeo)<a href="metabase.html#ejercicio-1-informe-de-ejemplo-en-metabase-incluido-en-el-vídeo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Implementa un cuadro de mando que incluya:
+<li><p>Obtén el informe de ejemplo del apartado <a href="metabase.html#ejemplo">1.4</a> a partir de la base de datos OLTP.</p></li>
+<li><p>Obtén el mismo informe a partir de la base de datos OLAP.</p></li>
+<li><p>Añade el informe obtenido de la base de datos OLAP, con dos formatos de presentación, a un cuadro de mando e incluye un campo de filtro.</p></li>
+</ul>
+</div>
+<div id="ejercicio-2-informe-libre" class="section level3 unnumbered hasAnchor">
+<h3>Ejercicio 2: Informe libre<a href="metabase.html#ejercicio-2-informe-libre" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Los 4 informes, cada uno de ellos en formato de tabla dinámica.</li>
-<li>Un campo de filtro que tenga sentido, de acuerdo a la definición de los informes.</li>
+<li>Obtén un informe libre sobre resultados de las ventas a partir de la base de datos OLAP.
+<ul>
+<li>Se valorará la originalidad del informe.</li>
 </ul></li>
-</ul></li>
-<li><strong>Cuadro de mando libre</strong>:
+<li>Añade el informe libre al cuadro de mando del ejercicio anterior de manera que también esté conectado al filtro definido.</li>
+</ul>
+</div>
+<div id="documentación-a-entregar" class="section level3 unnumbered hasAnchor">
+<h3>Documentación a entregar<a href="metabase.html#documentación-a-entregar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Implementa un cuadro de mando libre con <strong>2 informes</strong> y un campo de filtro:
+<li><p>Genera un documento en formato PDF con un apartado para cada ejercicio.</p></li>
+<li><p>Para la definición de cada informe incluye:</p>
 <ul>
-<li>Los informes basados exclusivamente en la base de datos OLAP.</li>
-<li>Que incluya representaciones gráficas para los informes.</li>
-</ul></li>
-</ul></li>
-</ol>
-<p><strong>Documentación a entregar:</strong></p>
-<ul>
-<li><p>Genera un documento en formato PDF con la estructura siguiente y el contenido que se indica:</p>
-<ol start="0" style="list-style-type: decimal">
-<li><p>Punto de Partida</p>
-<ol style="list-style-type: decimal">
-<li>Informe Inicial</li>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-</ol></li>
-<li><p>Implementación de los informes</p>
-<ol style="list-style-type: decimal">
-<li>Informe Inicial</li>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-</ol></li>
-<li><p>Cuadro de mando</p></li>
-<li><p>Cuadro de mando libre</p></li>
-</ol></li>
-<li><p>Para la implementación de cada informe (también para los del cuadro de mando libre) incluye:</p>
-<ul>
-<li>El título y los niveles de detalle de cada informe.</li>
 <li><strong>Captura de pantalla completa de la aplicación</strong> con la definición del informe.</li>
-<li>Si para la definición de los informes usas un modelo, no es necesario incluir la definición del modelo.</li>
+<li>Si para la definición de los informes usas un modelo, incluye otra con la definición del modelo.</li>
 </ul></li>
-<li><p>Para los cuadros de mando incluye:</p>
+<li><p>Para el cuadro de mando incluye:</p>
 <ul>
 <li>Explicación del campo de filtro incluido y cómo afecta a los informes.</li>
 <li><strong>Captura de pantalla completa de la aplicación</strong> mostrando la definición del filtro.</li>
