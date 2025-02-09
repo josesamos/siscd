@@ -1,5 +1,6 @@
 fig:ventas-oltp
 fig:ventas-olap
+fig:ventas-olap2
 metabase
 acceder-a-metabase
 obtener
@@ -7,3 +8,6 @@ bases-de-datos
 base-de-datos-oltp
 base-de-datos-olap
 ejemplo
+powerbi
+obtener-powerbi
+operaciones-powerbi
