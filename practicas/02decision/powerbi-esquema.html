@@ -175,8 +175,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html"><i class="fa fa-check"></i><b>3</b> Power BI: Esquema Multidimensional</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#obtener-powerbi2"><i class="fa fa-check"></i><b>3.1</b> Obtención de los datos</a></li>
-<li class="chapter" data-level="3.2" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#powerbi-medidas"><i class="fa fa-check"></i><b>3.2</b> Medidas calculadas</a></li>
-<li class="chapter" data-level="3.3" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#powerbi-jerarquias"><i class="fa fa-check"></i><b>3.3</b> Jerarquías</a></li>
+<li class="chapter" data-level="3.2" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#powerbi-llaves"><i class="fa fa-check"></i><b>3.2</b> Ocultar llaves generadas</a></li>
+<li class="chapter" data-level="3.3" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#powerbi-medidas"><i class="fa fa-check"></i><b>3.3</b> Medidas calculadas</a></li>
+<li class="chapter" data-level="3.4" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#powerbi-jerarquias"><i class="fa fa-check"></i><b>3.4</b> Jerarquías</a></li>
+<li class="chapter" data-level="3.5" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#páginas-interrelacionadas"><i class="fa fa-check"></i><b>3.5</b> Páginas interrelacionadas</a></li>
 <li class="chapter" data-level="" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#ejercicios-2"><i class="fa fa-check"></i>Ejercicios</a>
 <ul>
 <li class="chapter" data-level="" data-path="powerbi-esquema.html"><a href="powerbi-esquema.html#ejercicio-elementos-del-esquema-multidimensional-en-power-bi"><i class="fa fa-check"></i>Ejercicio: Elementos del esquema multidimensional en Power BI</a></li>
@@ -204,7 +206,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="powerbi-esquema" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">3</span> Power BI: Esquema Multidimensional<a href="powerbi-esquema.html#powerbi-esquema" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>En esta actividad, definiremos elementos del esquema multidimensional en Power BI, centrándonos en la creación de jerarquías en las dimensiones y medidas calculadas.</p>
+<p>En esta actividad, definiremos elementos del esquema multidimensional en Power BI, centrándonos en la creación de jerarquías en las dimensiones y medidas calculadas, también veremos cómo estructurar informes en páginas interrelacionadas.</p>
 <p>El objetivo no es replicar el informe generado en actividades anteriores, sino trabajar de forma independiente. Por ello, comenzaremos desde cero descargando nuevamente el archivo con la base de datos.</p>
 <div id="obtener-powerbi2" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Obtención de los datos<a href="powerbi-esquema.html#obtener-powerbi2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -219,16 +221,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><strong>Trabajaremos sobre esta base de datos</strong>.</p></li>
 </ul>
 </div>
-<div id="powerbi-medidas" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Medidas calculadas<a href="powerbi-esquema.html#powerbi-medidas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="powerbi-llaves" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Ocultar llaves generadas<a href="powerbi-esquema.html#powerbi-llaves" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para definir el esquema multidimensional en Power BI, es fundamental ocultar las claves primarias y foráneas que se generan automáticamente. Esta no es una operación opcional, sino un paso necesario para mantener la claridad del modelo y facilitar su interpretación, evitando que los usuarios finales vean información técnica irrelevante para el análisis.</p>
+</div>
+<div id="powerbi-medidas" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Medidas calculadas<a href="powerbi-esquema.html#powerbi-medidas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Definimos las siguientes medidas calculadas:</p>
 <ul>
 <li><p><span class="math inline">\(Importe = Cantidad * PVP\)</span></p></li>
 <li><p><span class="math inline">\(PVP_{medio} = \frac{\sum Importe}{\sum Cantidad}\)</span></p></li>
 </ul>
 </div>
-<div id="powerbi-jerarquias" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Jerarquías<a href="powerbi-esquema.html#powerbi-jerarquias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="powerbi-jerarquias" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Jerarquías<a href="powerbi-esquema.html#powerbi-jerarquias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Las siguientes figuras ilustran las jerarquías que vamos a definir para cada dimensión del modelo:</p>
 <p>En la figura <a href="powerbi-esquema.html#fig:dim-cuando">3.1</a> se muestran las jerarquías correspondientes a la dimensión <em>Cuándo</em>, que nos permitirá organizar la información temporal de manera estructurada.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:dim-cuando"></span>
@@ -259,67 +265,51 @@ Figura 3.4: Dimensión <em>Hora</em>.
 </p>
 </div>
 </div>
+<div id="páginas-interrelacionadas" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Páginas interrelacionadas<a href="powerbi-esquema.html#páginas-interrelacionadas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Power BI permite la creación de informes compuestos por múltiples páginas, las cuales pueden interrelacionarse entre sí. Esta funcionalidad facilita la navegación entre los datos, permitiendo a los usuarios explorar la información desde diferentes niveles de detalle.</p>
+<p>Las páginas que definamos pueden basarse en las jerarquías de las dimensiones.</p>
+</div>
 <div id="ejercicios-2" class="section level2 unnumbered hasAnchor">
 <h2>Ejercicios<a href="powerbi-esquema.html#ejercicios-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="ejercicio-elementos-del-esquema-multidimensional-en-power-bi" class="section level3 unnumbered hasAnchor">
 <h3>Ejercicio: Elementos del esquema multidimensional en Power BI<a href="powerbi-esquema.html#ejercicio-elementos-del-esquema-multidimensional-en-power-bi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Todos los apartados siguientes valen igual.</p>
 <ol style="list-style-type: decimal">
-<li><strong>Implementación de los informes</strong>:
+<li><p><strong>Elementos del esquema</strong>:</p>
 <ul>
-<li>En una página, define los 4 informes incluidos en el apartado <em>Operaciones</em> (apartado <a href="powerbi.html#operaciones-powerbi">2.2</a> ), cada uno de ellos en forma de tabla dinámica.</li>
-<li>Define el filtro de la operación Slice&amp;Dice para toda la página.</li>
+<li>Oculta las llaves generadas del esquema.</li>
+<li>Define las medidas calculadas del apartado <a href="powerbi-esquema.html#powerbi-medidas">3.3</a> en los hechos de los dos diseños.</li>
+<li>Define las jerarquías del apartado <a href="powerbi-esquema.html#powerbi-jerarquias">3.4</a> en las dimensiones.</li>
 </ul></li>
-<li><strong>Cuadro de mando libre</strong>:
+<li><p><strong>Uso de los elementos del esquema</strong>:</p>
 <ul>
-<li>Obtén un informe libre sobre resultados de las ventas a partir de la base de datos OLAP.
+<li><p>En una página, define un informe que incluya una de las jerarquías definidas.</p>
 <ul>
-<li>Se valorará la originalidad del informe.</li>
+<li>Indica el título y niveles de detalle del informe.</li>
 </ul></li>
-<li>Partiendo siempre de ese informe libre inicial, obtén 3 informes, <strong>al menos uno de ellos en formato gráfico</strong>, que se correspondan con las operaciones:
-<ul>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-</ul></li>
-<li>Incluye los cuatro informes en una página y define el filtro de la operación Slice&amp;Dice para toda la página.</li>
+<li><p>Relaciona ese informe con otro informe definido en otra página en el que se muestre otro nivel de detalle.</p></li>
+<li><p>Se valorará la originalidad de los informes.</p></li>
 </ul></li>
 </ol>
 <p><strong>Documentación a entregar:</strong></p>
 <ul>
 <li><p>Genera un documento en formato PDF con la estructura siguiente y el contenido que se indica a continuación:</p>
 <ol style="list-style-type: decimal">
-<li>Implementación de los informes
-<ol style="list-style-type: decimal">
-<li>Informe Inicial</li>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-<li>Cuadro de mando</li>
-</ol></li>
-<li>Cuadro de mando libre
-<ol style="list-style-type: decimal">
-<li>Informe Inicial</li>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-<li>Cuadro de mando</li>
-</ol></li>
+<li>Elementos del esquema
+<ul>
+<li><strong>Captura de pantalla completa de la aplicación</strong> mostrando la columna <em>Datos</em> con todos los elementos desplegados (tantas capturas como sean necesarias para mostrar todos los elementos).</li>
+</ul></li>
+<li>Uso de los elementos del esquema
+<ul>
+<li><strong>Captura de pantalla completa de la aplicación</strong> mostrando el informe original.</li>
+<li><strong>2 x Captura de pantalla completa de la aplicación</strong> mostrando el informe destino (para 2 valores distintos del informe original.</li>
+</ul></li>
 </ol></li>
 <li><p><strong>Antes de realizar las capturas de pantalla:</strong></p>
 <ul>
 <li><strong>Guarda o renombra el archivo Power BI con tu nombre de usuario de correo electrónico</strong>.</li>
 <li><strong>Renombra las páginas que contengan los cuadros de mando con tu nombre de usuario como prefijo</strong>.</li>
-</ul></li>
-<li><p>Para la implementación de cada informe (también para los del cuadro de mando libre) incluye:</p>
-<ul>
-<li>El título y los niveles de detalle de cada informe.</li>
-<li><strong>Captura de pantalla completa de la aplicación</strong> con la definición y visualización de solo ese informe.</li>
-</ul></li>
-<li><p>Para los cuadros de mando incluye:</p>
-<ul>
-<li><strong>Captura de pantalla completa de la aplicación</strong> mostrando el filtro.</li>
-<li><strong>Dos capturas de pantalla completa de la aplicación</strong> mostrando cómo funciona el campo de filtro (antes y después de aplicarlo).</li>
 </ul></li>
 </ul>
 
