@@ -1,6 +1,10 @@
 fig:ventas-oltp
 fig:ventas-olap
 fig:ventas-olap2
+fig:dim-cuando
+fig:dim-donde
+fig:dim-que
+fig:dim-hora
 metabase
 acceder-a-metabase
 obtener
@@ -11,3 +15,7 @@ ejemplo
 powerbi
 obtener-powerbi
 operaciones-powerbi
+powerbi-esquema
+obtener-powerbi2
+powerbi-medidas
+powerbi-jerarquias
