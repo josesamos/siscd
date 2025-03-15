@@ -21,3 +21,12 @@ powerbi-llaves
 powerbi-medidas
 powerbi-jerarquias
 páginas-interrelacionadas
+powerquery
+obtener-powerquery
+operaciones-powerquery
+fig:ventas-oltp-pq
+datos-powerquery
+objetivo-powerquery
+fig:ventas-olap-pq
+fig:ventas-olap-pq2
+pasos-powerquery
