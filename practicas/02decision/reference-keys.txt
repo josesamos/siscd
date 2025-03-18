@@ -29,4 +29,3 @@ obtener-powerquery
 datos-powerquery
 objetivo-powerquery
 pasos-powerquery
-otras-operaciones

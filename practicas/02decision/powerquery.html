@@ -190,7 +190,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.2" data-path="powerquery.html"><a href="powerquery.html#datos-powerquery"><i class="fa fa-check"></i><b>4.2</b> Datos disponibles</a></li>
 <li class="chapter" data-level="4.3" data-path="powerquery.html"><a href="powerquery.html#objetivo-powerquery"><i class="fa fa-check"></i><b>4.3</b> Objetivo</a></li>
 <li class="chapter" data-level="4.4" data-path="powerquery.html"><a href="powerquery.html#pasos-powerquery"><i class="fa fa-check"></i><b>4.4</b> Pasos</a></li>
-<li class="chapter" data-level="4.5" data-path="powerquery.html"><a href="powerquery.html#otras-operaciones"><i class="fa fa-check"></i><b>4.5</b> Otras operaciones</a></li>
 <li class="chapter" data-level="" data-path="powerquery.html"><a href="powerquery.html#ejercicios-3"><i class="fa fa-check"></i>Ejercicios</a></li>
 </ul></li>
 <li class="divider"></li>
@@ -215,6 +214,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="powerquery" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">4</span> Power Query<a href="powerquery.html#powerquery" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li><em>Vídeo: <a href="https://youtu.be/uQd8NrILzdw" class="uri">https://youtu.be/uQd8NrILzdw</a></em></li>
+</ul>
 <p>Power Query es una herramienta de Microsoft utilizada para importar, transformar y combinar datos de diversas fuentes en Excel y Power BI. Lo vamos a usar desde Power BI.</p>
 <p>Permite automatizar procesos de limpieza y preparación de datos sin necesidad de programación, mediante una interfaz visual intuitiva. Facilita la conexión con bases de datos, archivos y servicios en la nube, aplicando filtros, combinaciones y cálculos antes de cargar los datos en el modelo final.</p>
 <div id="obtener-powerquery" class="section level2 hasAnchor" number="4.1">
@@ -318,15 +320,32 @@ Figura 4.3: Representación de la base de datos OLAP con todos los campos.
 <li><p>Cargar todos los datos en el modelo.</p></li>
 </ol>
 </div>
-<div id="otras-operaciones" class="section level2 hasAnchor" number="4.5">
-<h2><span class="header-section-number">4.5</span> Otras operaciones<a href="powerquery.html#otras-operaciones" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Para mostrar algunas operaciones sobre tablas en Power Query que no han sido necesarias en el caso anterior, vamos a usar los datos de otro ejemplo, los disponibles en el INE sobre los nombres de los recién nacidos.</p>
-<ul>
-<li><a href="https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&amp;cid=1254736177009&amp;menu=resultados&amp;idp=1254734710990#_tabs-1254736195498">Nombres de los recién nacidos</a></li>
-</ul>
-</div>
 <div id="ejercicios-3" class="section level2 unnumbered hasAnchor">
 <h2>Ejercicios<a href="powerquery.html#ejercicios-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Todos los apartados siguientes valen igual.</p>
+<ol style="list-style-type: decimal">
+<li><p>(Parte I) En un archivo de Power BI cuyo nombre comience por tu nombre de usuario de correo electrónico, a partir de la base de datos OLTP en formato CSV, obtén las tablas base siguientes:</p>
+<ul>
+<li><code>ventas_linea</code></li>
+<li><code>ventas_dia</code></li>
+</ul></li>
+<li><p>(Parte II) En el mismo archivo, define las tablas de hechos y de dimensiones, de manera que sean las únicas que se carguen en el modelo.</p>
+<ul>
+<li><code>fact_ventas_linea</code></li>
+<li><code>fact_ventas_dia</code></li>
+<li><code>dim_que</code></li>
+<li><code>dim_donde</code></li>
+<li><code>dim_cuando</code></li>
+<li><code>dim_hora</code></li>
+<li><code>dim_ticket</code></li>
+</ul></li>
+</ol>
+<p><strong>Documentación a entregar:</strong></p>
+<ul>
+<li><p>Genera un documento en formato PDF.</p></li>
+<li><p>Para cada una de las tablas que se indican en los ejercicios, captura una <em>pantalla completa de Power Query</em> donde se vean los pasos de definición de la tabla y su contenido.</p></li>
+<li><p>Captura una <em>pantalla completa de Power BI</em> donde se vean las tablas del esquema.</p></li>
+</ul>
 
 </div>
 </div>
