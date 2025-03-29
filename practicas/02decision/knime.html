@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Power BI | Herramientas de Soporte a la Decisión</title>
+  <title>5 KNIME | Herramientas de Soporte a la Decisión</title>
   <meta name="description" content="<p>SISCD
 Dpto. de Lenguajes y Sistemas Informáticos
 Universidad de Granada</p>" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Power BI | Herramientas de Soporte a la Decisión" />
+  <meta property="og:title" content="5 KNIME | Herramientas de Soporte a la Decisión" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>SISCD
@@ -19,7 +19,7 @@ Universidad de Granada</p>" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Power BI | Herramientas de Soporte a la Decisión" />
+  <meta name="twitter:title" content="5 KNIME | Herramientas de Soporte a la Decisión" />
   
   <meta name="twitter:description" content="<p>SISCD
 Dpto. de Lenguajes y Sistemas Informáticos
@@ -34,8 +34,8 @@ Universidad de Granada</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="metabase.html"/>
-<link rel="next" href="powerbi-esquema.html"/>
+<link rel="prev" href="powerquery.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -220,165 +220,119 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="powerbi" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">2</span> Power BI<a href="powerbi.html#powerbi" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<ul>
-<li><em>Vídeo: <a href="https://youtu.be/0jvMGuW-l1c" class="uri">https://youtu.be/0jvMGuW-l1c</a></em></li>
-</ul>
-<p>Power BI también proporciona una amplia gama de funcionalidades. Entre ellas, incluye la herramienta Power Query, que utilizaremos más adelante. Nos enfocaremos exclusivamente en los aspectos esenciales para comprender su funcionamiento y desarrollar los ejercicios.</p>
-<div id="obtener-powerbi" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Obtención de los datos<a href="powerbi.html#obtener-powerbi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>La base de datos necesaria está disponible en:</p>
+<div id="knime" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> KNIME<a href="knime.html#knime" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>KNIME</em> es una plataforma de software libre y de código abierto para el análisis de datos, minería de datos, aprendizaje automático e inteligencia artificial.</p>
+<p>Da soporte al diseño de flujos de trabajo de forma visual, sin necesidad de programación. Permite conectar bases de datos y diferentes formatos de archivos, facilitando la integración de información desde múltiples fuentes.</p>
+<div id="obtener-knime" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Obtención de los datos<a href="knime.html#obtener-knime" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Los datos son los mismos que usamos para la actividad de Power Query. Si ya los tenemos en nuestro ordenador, no es necesario volverlos a descargar.</p>
+<p>Los datos necesarios están disponibles en:</p>
 <ul>
 <li><a href="https://doi.org/10.6084/m9.figshare.26543542.v3"><strong>Bases de datos OLTP y OLAP sobre ventas en una cadena de tiendas</strong></a>.</li>
 </ul>
 <p>Descargaremos el archivo:</p>
 <ul>
-<li><p><strong>Power BI OLAP</strong>: <code>ventas_olap.pbix</code> (base de datos OLAP en formato de Power BI).</p></li>
-<li><p><strong>Renombra el archivo con tu nombre de usuario de correo electrónico</strong>.</p></li>
-<li><p><strong>Trabajaremos sobre esta base de datos</strong>.</p></li>
+<li><p><code>ventas_oltp_csv.zip</code> (base de datos OLTP en formato CSV).</p></li>
+<li><p><strong>Descomprime el archivo en una carpeta de trabajo</strong>.</p></li>
 </ul>
 </div>
-<div id="operaciones-powerbi" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Operaciones<a href="powerbi.html#operaciones-powerbi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vamos a realizar las siguientes operaciones:</p>
+<div id="datos-knime" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Datos disponibles<a href="knime.html#datos-knime" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En la figura <a href="powerquery.html#fig:ventas-oltp-pq">4.1</a> se muestra el esquema de la base de datos OLTP.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ventas-oltp-pq"></span>
+<img src="figuras_original/oltp.png" alt="Base de datos OLTP." width="90%" />
+<p class="caption">
+Figura 4.1: Base de datos OLTP.
+</p>
+</div>
+<p>Los datos que hemos obtenido se corresponden con los de la base de datos OLTP pero están almacenados en formato CSV.</p>
+</div>
+<div id="objetivo-knime" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Objetivo<a href="knime.html#objetivo-knime" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El objetivo de esta actividad es <strong>realizar una segmentación de los productos</strong> para poderla usar como un atributo adicional en nuestros informes.</p>
+</div>
+<div id="pasos-knime" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Pasos<a href="knime.html#pasos-knime" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li><p>Obtenemos un informe inicial focalizado en las ventas: su título comienza por “Ventas”.</p>
+<li><p>Importar las tablas</p>
 <ul>
-<li>Título: <em>Ventas por mes y provincia durante 2024</em>.</li>
-<li>Niveles de detalle:
-<ul>
-<li>Cuándo: Mes</li>
-<li>Dónde: Provincia</li>
-<li>Qué: Todo</li>
+<li>Eliminamos el paso <code>Tipo cambiado</code>.</li>
 </ul></li>
-<li>Donde <span class="math inline">\(Importe = Cantidad * PVP\)</span>.</li>
+<li><p>Seleccionar una muestra de datos</p>
+<ul>
+<li>De la tabla <code>linea_ticket</code>.</li>
+<li>Quitar filas alternas (dejamos el 1‰: dejar 1 y quitar 999).</li>
 </ul></li>
-</ol>
-<table>
-<thead>
-<tr class="header">
-<th>Mes</th>
-<th>Provincia</th>
-<th>Suma de Cantidad</th>
-<th>Suma de Importe</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Partiendo siempre de ese informe inicial, obtenemos 3 informes:</p>
-<ol style="list-style-type: decimal">
-<li><p>Roll-Up: obtenemos menos nivel de detalle de las ventas considerando uno de los conceptos que las describen.</p>
+<li><p>Obtener los datos base</p>
 <ul>
-<li>Título: <em>Ventas por mes durante 2024</em>.</li>
-<li>Niveles de detalle:
+<li>Partiendo de la tabla <code>linea_ticket</code>.</li>
+<li>Operaciones principales:
 <ul>
-<li>Cuándo: Mes</li>
-<li>Dónde: Todo</li>
-<li>Qué: Todo</li>
+<li>Referencia.</li>
+<li>Duplicación.</li>
+<li>Unión.</li>
+<li>Agrupar por.</li>
 </ul></li>
 </ul></li>
-<li><p>Drill-Down: obtenemos más nivel de detalle de las ventas según uno de los conceptos que las describen.</p>
+<li><p>Definir los hechos</p>
 <ul>
-<li>Título: <em>Ventas por mes y municipio durante 2024</em>.</li>
-<li>Niveles de detalle:
+<li>Partiendo de los datos base.</li>
+<li>Operaciones principales:
 <ul>
-<li>Cuándo: Mes</li>
-<li>Dónde: Municipio</li>
-<li>Qué: Todo</li>
+<li>Referencia.</li>
 </ul></li>
 </ul></li>
-<li><p>Slice&amp;Dice: no cambiamos el nivel de detalle pero filtramos las ventas por uno de los conceptos descriptores.</p>
+<li><p>Definir y enriquecer las dimensiones</p>
 <ul>
-<li>Título: <em>Ventas por mes y provincia durante 2024 de productos fabricados en Andalucía</em>.</li>
-<li>Niveles de detalle:
+<li>Partiendo de los datos base.</li>
+<li>Operaciones principales:
 <ul>
-<li>Cuándo: Mes</li>
-<li>Dónde: Provincia</li>
-<li>Qué: Todo</li>
+<li>Referencia</li>
+<li>Quitar duplicados.</li>
+<li>Renombrar campos.</li>
+<li>Unión.</li>
+<li>Agregar columna.</li>
 </ul></li>
 </ul></li>
-</ol></li>
-<li><p>Para cada informe hemos indicado:</p>
+<li><p>Relacionar hechos y dimensiones.</p>
 <ul>
-<li>Un título descriptivo.</li>
-<li>El nivel de detalle al que está definido considerando los conceptos que describen las ventas:
+<li>Operaciones principales:
 <ul>
-<li><em>Cuándo</em> (fecha u hora de las ventas),</li>
-<li><em>Dónde</em> (lugar donde se producen las ventas) y</li>
-<li><em>Qué</em> (artículos vendidos).</li>
+<li>Unión.</li>
 </ul></li>
 </ul></li>
+<li><p>Seleccionar las tablas que componen el modelo.</p></li>
+<li><p>Cargar todos los datos en el modelo.</p></li>
 </ol>
 </div>
-<div id="ejercicios-1" class="section level2 unnumbered hasAnchor">
-<h2>Ejercicios<a href="powerbi.html#ejercicios-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="ejercicio-informes-y-cuadros-de-mando-power-bi" class="section level3 unnumbered hasAnchor">
-<h3>Ejercicio: Informes y cuadros de mando Power BI<a href="powerbi.html#ejercicio-informes-y-cuadros-de-mando-power-bi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Basándote en la información anterior y las operaciones realizadas en el vídeo, desarrolla los ejercicios siguientes.</p>
+<div id="ejercicios-4" class="section level2 unnumbered hasAnchor">
+<h2>Ejercicios<a href="knime.html#ejercicios-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Todos los apartados siguientes valen igual.</p>
 <ol style="list-style-type: decimal">
-<li><strong>Implementación de los informes</strong>:
+<li><p>(Parte I) En un archivo de Power BI cuyo nombre comience por tu nombre de usuario de correo electrónico, a partir de la base de datos OLTP en formato CSV, obtén las tablas base siguientes:</p>
 <ul>
-<li>En una página, define los 4 informes incluidos en el apartado <em>Operaciones</em> (apartado <a href="powerbi.html#operaciones-powerbi">2.2</a> ), cada uno de ellos en forma de tabla dinámica.</li>
-<li>Define el filtro de la operación Slice&amp;Dice para toda la página.</li>
+<li><code>ventas_linea</code></li>
+<li><code>ventas_dia</code></li>
 </ul></li>
-<li><strong>Cuadro de mando libre</strong>:
+<li><p>(Parte II) En el mismo archivo, define las tablas de hechos y de dimensiones, de manera que sean las únicas que se carguen en el modelo.</p>
 <ul>
-<li>Obtén un informe libre sobre resultados de las ventas a partir de la base de datos OLAP.
-<ul>
-<li>Se valorará la originalidad del informe.</li>
-</ul></li>
-<li>Partiendo siempre de ese informe libre inicial, obtén 3 informes, <strong>al menos uno de ellos en formato gráfico</strong>, que se correspondan con las operaciones:
-<ul>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-</ul></li>
-<li>Incluye los cuatro informes en una página y define el filtro de la operación Slice&amp;Dice para toda la página.</li>
+<li><code>fact_ventas_linea</code></li>
+<li><code>fact_ventas_dia</code></li>
+<li><code>dim_que</code></li>
+<li><code>dim_donde</code></li>
+<li><code>dim_cuando</code></li>
+<li><code>dim_hora</code></li>
+<li><code>dim_ticket</code></li>
 </ul></li>
 </ol>
 <p><strong>Documentación a entregar:</strong></p>
 <ul>
-<li><p>Genera un documento en formato PDF con la estructura siguiente y el contenido que se indica a continuación:</p>
-<ol style="list-style-type: decimal">
-<li>Implementación de los informes
-<ol style="list-style-type: decimal">
-<li>Informe Inicial</li>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-<li>Cuadro de mando</li>
-</ol></li>
-<li>Cuadro de mando libre
-<ol style="list-style-type: decimal">
-<li>Informe Inicial</li>
-<li>Roll-Up</li>
-<li>Drill-Down</li>
-<li>Slice&amp;Dice</li>
-<li>Cuadro de mando</li>
-</ol></li>
-</ol></li>
-<li><p><strong>Antes de realizar las capturas de pantalla:</strong></p>
-<ul>
-<li><strong>Guarda o renombra el archivo Power BI con tu nombre de usuario de correo electrónico</strong>.</li>
-<li><strong>Renombra las páginas que contengan los cuadros de mando con tu nombre de usuario como prefijo</strong>.</li>
-</ul></li>
-<li><p>Para la implementación de cada informe (también para los del cuadro de mando libre) incluye:</p>
-<ul>
-<li>El título y los niveles de detalle de cada informe.</li>
-<li><strong>Captura de pantalla completa de la aplicación</strong> con la definición y visualización de solo ese informe.</li>
-</ul></li>
-<li><p>Para los cuadros de mando incluye:</p>
-<ul>
-<li><strong>Captura de pantalla completa de la aplicación</strong> mostrando el filtro.</li>
-<li><strong>Dos capturas de pantalla completa de la aplicación</strong> mostrando cómo funciona el campo de filtro (antes y después de aplicarlo).</li>
-</ul></li>
+<li><p>Genera un documento en formato PDF.</p></li>
+<li><p>Para cada una de las tablas que se indican en los ejercicios, dedica <strong>un apartado</strong> en el documento y captura una <em>pantalla completa de Power Query</em> donde se vean los pasos de definición de la tabla y su contenido.</p></li>
+<li><p>Captura una <em>pantalla completa de Power BI</em> donde se vean las tablas del esquema.</p></li>
 </ul>
 
-</div>
 </div>
 </div>
             </section>
@@ -386,8 +340,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="metabase.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="powerbi-esquema.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="powerquery.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

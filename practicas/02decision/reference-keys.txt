@@ -29,3 +29,8 @@ obtener-powerquery
 datos-powerquery
 objetivo-powerquery
 pasos-powerquery
+knime
+obtener-knime
+datos-knime
+objetivo-knime
+pasos-knime
